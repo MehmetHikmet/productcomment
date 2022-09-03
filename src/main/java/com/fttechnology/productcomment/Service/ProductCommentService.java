@@ -60,10 +60,8 @@ public class ProductCommentService implements IProductCommentService{
 	}
 
 	@Override
-	public List<ProductComment> findByColumnCommentDateBetweenWithProductID(int product_id,LocalDateTime startDate, LocalDateTime endDate) {
-		
-		
-		return commentDal.findByColumnCommentDateBetweenWithProductID(product_id,startDate, endDate);
+	public List<ProductComment> findByCommentDateBetweenWithProductID(int product_id,LocalDateTime startDate, LocalDateTime endDate) {
+		return commentDal.findByCommentDateBetweenWithProductID(product_id,startDate, endDate);
 	}
 
 

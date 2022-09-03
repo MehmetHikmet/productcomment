@@ -17,7 +17,7 @@ public interface IProductCommentService {
 	void saveUser(User user);
 	List<ProductComment> findAllByUserId(int id);
 	List<ProductComment> findAllByProductId(int id);
-	List<ProductComment> findByColumnCommentDateBetweenWithProductID(int product_id,LocalDateTime startDate, LocalDateTime endDate);
+	List<ProductComment> findByCommentDateBetweenWithProductID(int product_id,LocalDateTime startDate, LocalDateTime endDate);
 	List<ProductComment> findByCommentDateBetweenWithUserID(int user_id, LocalDateTime startDate, LocalDateTime endDate);
 	List<Product> findByExpireDateLessThan(LocalDate toDay);
 	List<Product> findByExpireDateGreaterThan(LocalDate toDay);

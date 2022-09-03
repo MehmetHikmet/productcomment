@@ -71,7 +71,7 @@ public class Controller {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		LocalDateTime start = LocalDateTime.parse(startDate, formatter);
 		LocalDateTime end = LocalDateTime.parse(endDate, formatter);
-		return commentService.findByCommentDateBetweenWithUserID(product_id,start,end);
+		return commentService.findByCommentDateBetweenWithProductID(product_id,start,end);
 	}
 	
 	@GetMapping("/commentsFromSpecificUserByDate")

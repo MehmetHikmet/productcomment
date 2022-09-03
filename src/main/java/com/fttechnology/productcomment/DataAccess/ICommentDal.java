@@ -13,7 +13,7 @@ import com.fttechnology.productcomment.Entities.ProductComment;
 public interface ICommentDal extends JpaRepository<ProductComment, Integer>{
 	List<ProductComment> findAllByUserId(int id);
 	List<ProductComment> findAllByProductId(int id);
-	List<ProductComment> findByColumnCommentDateBetweenWithProductID(int product_id, LocalDateTime startDate, LocalDateTime endDate);
+	List<ProductComment> findByCommentDateBetweenWithProductID(int product_id, LocalDateTime startDate, LocalDateTime endDate);
 	List<ProductComment> findByCommentDateBetweenWithUserID(int user_id, LocalDateTime startDate, LocalDateTime endDate);
 }
 
