@@ -26,7 +26,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity(name="comment")
 @Table(name="comment")
-@NamedQuery(name = "ProductComment.findByColumnCommentDateBetweenWithProductID",
+@NamedQuery(name = "ProductComment.findByCommentDateBetweenWithProductID",
 query = "select u from comment u where u.productID=?1 and u.commentdate between ?2 and ?3")
 @NamedQuery(name = "ProductComment.findByCommentDateBetweenWithUserID",
 query = "select c from comment c where c.userID=?1 and c.commentdate between ?2 and ?3")
