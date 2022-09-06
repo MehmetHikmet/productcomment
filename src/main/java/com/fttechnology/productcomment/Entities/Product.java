@@ -40,9 +40,10 @@ public class Product {
     @OneToMany(cascade = CascadeType.ALL, mappedBy="product", fetch = FetchType.LAZY)
     private List<ProductComment> commentList;
 
-	public Product(String name, double price) {
+	public Product(String name, double price, LocalDate expireDate) {
 		this.name = name;
 		this.price = price;
+		this.expireDate = expireDate;
 	}
 
 	public Product() {
