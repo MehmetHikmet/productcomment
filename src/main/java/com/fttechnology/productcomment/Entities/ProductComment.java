@@ -48,16 +48,16 @@ public class ProductComment {
 	
 
 	@Column(name="comment_date")
-    @UpdateTimestamp
-    private LocalDateTime commentdate;
+    	@UpdateTimestamp
+        private LocalDateTime commentdate;
 	
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "product_id", insertable = false, updatable = false)
-    private Product product;
+    	@ManyToOne(fetch = FetchType.EAGER)
+        @JoinColumn(name = "product_id", insertable = false, updatable = false)
+    	private Product product;
 	    
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", insertable = false, updatable = false)
-    private User user;
+    	@ManyToOne(fetch = FetchType.EAGER)
+    	@JoinColumn(name = "user_id", insertable = false, updatable = false)
+    	private User user;
     
 
 	public ProductComment() {
