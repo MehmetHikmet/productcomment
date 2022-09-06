@@ -25,7 +25,7 @@ docker compose up -d
 
 ## Explore Rest APIs
 
-####GET OPERATIONS
+#### GET OPERATIONS
 
 * Bir kullanıcının yapmış olduğu yorumları listelemek için
 ```bash
@@ -58,7 +58,7 @@ GET /api/checkExpireProducts
 ```
 
 
-####POST OPERATIONS
+#### POST OPERATIONS
 
 
 * Kullanıcı ekler
@@ -101,7 +101,7 @@ POST /api/addComment
 ```
 
 
-####PUT OPERATIONS
+#### PUT OPERATIONS
 
 * Bir yorum güncellemek için
 
@@ -116,7 +116,7 @@ PUT /api/updateComment
     }
 ```
 
-####DELETE OPERATIONS
+#### DELETE OPERATIONS
 
 * Bir yorumu silmek için
 
